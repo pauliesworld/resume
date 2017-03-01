@@ -1,0 +1,1 @@
+/paulie/archive/resume/moderncv.cls
