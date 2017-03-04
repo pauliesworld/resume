@@ -244,6 +244,14 @@
 % usage: \homepage{<url>}
 \newcommand*{\homepage}[1]{\def\@homepage{#1}}
 
+% defines one's github page (optional)
+% usage: \github{<url>}
+\newcommand*{\github}[1]{\def\@github{#1}}
+
+% defines one's linkedin page (optional)
+% usage: \linkedin{<url>}
+\newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
+
 % adds a fixed/mobile/fax number to one's personal information (optional)
 % usage: \phone[<optional type>]{<number>}
 % where <optional type> should be either "fixed" (default), "mobile" or "fax
