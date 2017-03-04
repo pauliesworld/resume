@@ -35,7 +35,7 @@
 \moderncvcolor{blue}
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.82]{geometry}
 
 % set width of the date column
 \setlength{\hintscolumnwidth}{3cm}
@@ -65,6 +65,8 @@
       %\ifthenelse{\isundefined{\@fax}}{}{\makenewline\faxsymbol\@fax}%
       \ifthenelse{\isundefined{\@email}}{}{\makenewline\emailsymbol\emaillink{\@email}}%
       \ifthenelse{\isundefined{\@homepage}}{}{\makenewline\homepagesymbol\httplink{\@homepage}}%
+      \ifthenelse{\isundefined{\@github}}{}{\makenewline\githubsocialsymbol\httplink{\@github}}%
+      \ifthenelse{\isundefined{\@linkedin}}{}{\makenewline\linkedinsocialsymbol\httplink{\@linkedin}}%
       \ifthenelse{\isundefined{\@extrainfo}}{}{\makenewline\@extrainfo}%
     \end{tabular}
   }%
@@ -107,7 +109,7 @@
   % optional quote
   \ifthenelse{\isundefined{\@quote}}%
     {}%
-    {{\begin{minipage}{\quotewidth}\raggedright\quotestyle{\@quote}\end{minipage}\\[2.5em]}}%
+    {{\begin{minipage}{\quotewidth}\vspace{-.3in}\raggedright\quotestyle{\@quote}\end{minipage}\\[2.5em]}}%
   \par}% to avoid weird spacing bug at the first section if no blank line is left after \makecvtitle
 \makeatother
 
@@ -117,12 +119,14 @@
 \firstname{Paul}
 \familyname{Johnson}
 \title {Systems Engineer}
-\address{XXXXX XXXXXX Dr.}{Broomfield, CO 80020}
-\mobile{+1.720.XXX.XXXX}
+\address{XXX XXXXXX Dr.}{Broomfield, CO 80020}
+\mobile{+1.XXX.XXX.XXXX}
 \email{paulie@pauliesworld.org}
-\homepage{www.pauliesworld.org}\vspace{10 mm}
+\homepage{www.pauliesworld.org}
+\github{github.com/pauliesworld}
+\linkedin{linkedin.com/in/pjcolorado}
 \photo[3cm][0pt]{portrait.png}
-\quote{Interests include storage systems, virtualized computing, \hspace{0.05in}performance analysis, systems integration, automation design, \hspace{0.15in}and the occasional mountain climb.}
+\quote{Interests include storage systems, virtualized computing, \hspace{0.25in}performance analysis, systems integration, automation design, \hspace{0.25in}and the occasional mountain climb.}
 
 % uncomment to suppress automatic page numbering for CVs longer than one page
 \nopagenumbers{}
@@ -130,6 +134,9 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
+
+
+\vspace*{-.4in}
 
 % set fonts
 \setmainfont{MyriadPro-Light.otf}
@@ -139,6 +146,7 @@
 \maketitle
 
 %Section
+\vspace*{-.2in}
 \section{Education}
 \cventry{2004 \arrowsymbol 2008}{University of Colorado}{}{}{}{Boulder, CO}
 \vspace*{-3mm}
@@ -152,7 +160,19 @@
 
 %Section
 \section{Experience}
-\cventry{Sept \hspace{.455in} \hspace{.43in}\\2014 \arrowsymbol 2017}{Oracle Corporation}{}{}{}{Broomfield, CO}
+\cventry{Apr \hspace{.505in} \hspace{.43in}\\2017 \arrowsymbol \hspace{.27in}}{Amazon Web Services}{}{}{}{Broomfield, CO}
+\vspace*{-3mm}
+\cventry{}{}{Systems Engineer}{}{}{}
+\vspace*{-1mm}
+%\cvlistitem{}
+%\cvlistitem{}
+%\cvlistitem{}
+%\cvlistitem{}
+%\cvlistitem{}
+\vspace{2in}
+\vspace{0.15in}
+
+\cventry{Sept \hspace{.205in} Mar\hspace{.43in}\\2017 \arrowsymbol 2017}{Oracle Corporation}{}{}{}{Broomfield, CO}
 \vspace*{-3mm}
 \cventry{}{}{Principal Software Engineer}{}{}{}
 \vspace*{-1mm}
@@ -168,8 +188,8 @@
 \vspace*{-3mm}
 \cventry{}{}{Senior Software Engineer}{}{}{}
 \vspace*{-1mm}
-\cvlistitem{Primary test lead for the integration of the Oracle ZFS Storage Appliance with the Oracle Exalogic Elastic Cloud and Oracle SuperCluster}
-\cvlistitem{Engaged in storage ecosystem testing encompassing Oracle Database 11g/12c, Oracle VM, and the Oracle Virtual Compute Appliance}
+\cvlistitem{Primary test lead for the initial integration of the Oracle ZFS Storage Appliance with the Oracle Exalogic Elastic Cloud and Oracle SuperCluster}
+\cvlistitem{Engaged in storage ecosystem testing encompassing Oracle Database 11g/12c, Oracle VM, and the Oracle Private Compute Appliance}
 \cvlistitem{Qualified the Xsigo I/O Fabric Director with the Oracle ZFS Storage Appliance}
 \cvlistitem{Led training sessions for customers, sales consultants, quality assurance engineers, and partners in Florida, California, New York, Hungary, India, Japan, and Israel}
 \vspace{0.15in}
@@ -179,16 +199,16 @@
 \cventry{}{}{Software Engineer}{}{}{}
 \vspace*{-1mm}
 \cvlistitem{Managed over 100 independent hardware vendors (IHV) by providing development support for device drivers on Solaris 10 and OpenSolaris}
-\cvlistitem{Conducted interoperability testing of IHV products resulting in over 60 completed projects}
+\cvlistitem{Conducted interoperability testing of IHV products, completing over 60 projects}
 \cvlistitem{Re-evaluated hardware testing strategies by rewriting 7 test plans covering USB, KVM, storage, printing, audio, graphics, and network connectivity}
-\cvlistitem{Administered a cluster of 18 SPARC and x64-based Sun servers used in the testing and certification of third party hardware products}
+\cvlistitem{Administered a cluster of 18 SPARC and x86-based Sun servers used in the testing and certification of third party hardware products}
 \vspace{0.15in}
 
 \cventry{May \hspace{0.215in} May\\2007  \arrowsymbol  2008}{UNAVCO, Inc.}{}{}{}{Boulder, CO}
 \vspace*{-3mm}
 \cventry{}{}{Systems Administrator}{}{}{}
 \vspace*{-1mm}
-\cvlistitem{Maintained an environment of Solaris servers involving hardware upgrades, patching, and installs}
+\cvlistitem{Maintained an environment of Solaris servers involving installs, upgrades, and patching}
 \cvlistitem{Constructed a Perl-based framework to automate satellite communication and gather weather telemetry data in Greenland and Antarctica}
 \cvlistitem{Built a custom Windows MSI package manager alongside Ghost imaging to automate new workstation installations}
 \cvlistitem{Deployed an OpenLDAP directory system to manage employee authentication}
@@ -196,12 +216,12 @@
 
 \cventry{May \hspace{0.215in} May\\2006  \arrowsymbol  2007}{University of Colorado}{}{}{}{Boulder, CO}
 \vspace*{-3mm}
-\cventry{}{}{Support Analyst}{}{}{}
-\vspace*{-1mm}
-\cvlistitem{Provided technical assistance to faculty, staff, and students via e-mail and phone}
-\cvlistitem{Supported an e-mail migration involving communication with over 500 customers }
-\cvlistitem{Handled in excess of 3000 support cases during employment}
-\vspace{0.15in}
+\cventry{}{}{Technical Support Analyst}{}{}{}
+%%\vspace*{-1mm}
+%%\cvlistitem{Provided technical assistance to faculty, staff, and students via e-mail and phone}
+%%\cvlistitem{Supported an e-mail migration involving communication with over 500 customers }
+%%\cvlistitem{Handled in excess of 3000 support cases during employment}
+%%\vspace{0.15in}
 
 %Section
 \section{Certifications}
@@ -214,9 +234,7 @@
 \cvline{Systems}{FreeBSD, Linux, Mac OS X, Solaris, Windows}
 \cvline{Languages}{Bash, C, C++, Perl, Python, SQL}
 \cvline{Protocols}{TCP/IP, NFS, iSCSI, Fibre Channel, InfiniBand}
-\cvline{Tools}{BIND, DTrace, OpenLDAP, Oracle Database, Mercurial, MySQL, Subversion, vi}
-\cvline{Examples}{Examples of my programming work can be found here:}
-\cvline{}{\href{http://www.pauliesworld.org/?page=projects}{http://www.pauliesworld.org/?page=projects}}
+\cvline{Tools}{BIND, DTrace, Git, OpenLDAP, Oracle Database, Mercurial, MySQL, vi}
 
 \makecvfooter
 \end{document}
