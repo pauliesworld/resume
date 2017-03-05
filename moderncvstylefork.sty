@@ -33,6 +33,7 @@
 %                overall style definition
 %-------------------------------------------------------------------------------
 % symbols
+
 \moderncvicons{marvosym}
 \newcommand*{\arrowsymbol}{$\rightarrow$~}
 
@@ -109,8 +110,8 @@
         \ifthenelse{\equal{\@addresscity}{}}{}{\makenewline\@addresscity}% if \addresstreet is defined, \addresscity and addresscountry will always be defined but could be empty
         \ifthenelse{\equal{\@addresscountry}{}}{}{\makenewline\@addresscountry}}%
       \phonesdetails% needs to be pre-rendered as loops and tabulars seem to conflict
-      \ifthenelse{\isundefined{\@email}}{}{\makenewline\emailsymbol\emaillink{\@email}}%
       \ifthenelse{\isundefined{\@homepage}}{}{\makenewline\homepagesymbol\httplink{\@homepage}}%
+      \ifthenelse{\isundefined{\@email}}{}{\makenewline\emailsymbol\emaillink{\@email}}%
       \ifthenelse{\isundefined{\@github}}{}{\makenewline\githubsocialsymbol\httplink{\@github}}%
       \ifthenelse{\isundefined{\@linkedin}}{}{\makenewline\linkedinsocialsymbol\httplink{\@linkedin}}%
       \socialsdetails% needs to be pre-rendered as loops and tabulars seem to conflict
@@ -267,8 +268,8 @@
         \ifthenelse{\equal{\@addresscountry}{}}{}{\makenewline\@addresscountry}}%
       \collectionloop{phones}{% the key holds the phone type (=symbol command prefix), the item holds the number
         \makenewline\csname\collectionloopkey phonesymbol\endcsname\collectionloopitem}%
-      \ifthenelse{\isundefined{\@email}}{}{\makenewline\emailsymbol\emaillink{\@email}}%
       \ifthenelse{\isundefined{\@homepage}}{}{\makenewline\homepagesymbol\httplink{\@homepage}}%
+      \ifthenelse{\isundefined{\@email}}{}{\makenewline\emailsymbol\emaillink{\@email}}%
       \ifthenelse{\isundefined{\@github}}{}{\makenewline\githubsocialsymbol\httplink{\@github}}%
       \ifthenelse{\isundefined{\@linkedin}}{}{\makenewline\linkedinsocialsymbol\httplink{\@linkedin}}%
       \ifthenelse{\isundefined{\@extrainfo}}{}{\makenewline\@extrainfo}}%

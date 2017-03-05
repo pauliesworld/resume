@@ -4,6 +4,7 @@
 %% start of file `template.tex'.
 %% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
 %% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
+%% Copyright 2015-2017 Paul Johnson (paulie@pauliesworld.org).
 %%
 %% Based on Oliver Schrenk's version of modercv:
 %% https://github.com/oschrenk/moderncv-template/
@@ -60,11 +61,11 @@
       \ifthenelse{\isundefined{\@addressstreet}}{}{\makenewline\addresssymbol\@addressstreet%
         \ifthenelse{\equal{\@addresscity}{}}{}{\makenewline\@addresscity}% if \addresstreet is defined, \addresscity and addresscountry will always be defined but could be empty
         \ifthenelse{\equal{\@addresscountry}{}}{}{\makenewline\@addresscountry}}%
-      \ifthenelse{\isundefined{\@mobile}}{}{\makenewline\mobilesymbol\@mobile}%
-      %\ifthenelse{\isundefined{\@phone}}{}{\makenewline\phonesymbol\@phone}%
+      %\ifthenelse{\isundefined{\@mobile}}{}{\makenewline\mobilesymbol\@mobile}%
+      \ifthenelse{\isundefined{\@phone}}{}{\makenewline\phonesymbol\@phone}%
       %\ifthenelse{\isundefined{\@fax}}{}{\makenewline\faxsymbol\@fax}%
-      \ifthenelse{\isundefined{\@email}}{}{\makenewline\emailsymbol\emaillink{\@email}}%
       \ifthenelse{\isundefined{\@homepage}}{}{\makenewline\homepagesymbol\httplink{\@homepage}}%
+      \ifthenelse{\isundefined{\@email}}{}{\makenewline\emailsymbol\emaillink{\@email}}%
       \ifthenelse{\isundefined{\@github}}{}{\makenewline\githubsocialsymbol\httplink{\@github}}%
       \ifthenelse{\isundefined{\@linkedin}}{}{\makenewline\linkedinsocialsymbol\httplink{\@linkedin}}%
       \ifthenelse{\isundefined{\@extrainfo}}{}{\makenewline\@extrainfo}%
@@ -119,14 +120,14 @@
 \firstname{Paul}
 \familyname{Johnson}
 \title {Systems Engineer}
-\address{XXX XXXXXX Dr.}{Broomfield, CO 80020}
-\mobile{+1.XXX.XXX.XXXX}
-\email{paulie@pauliesworld.org}
+\address{XXXXX XXXXXX Dr.}{Broomfield, CO 80020}
+\phone{+1.XXX.XXX.XXXX}
 \homepage{www.pauliesworld.org}
+\email{paulie@pauliesworld.org}
 \github{github.com/pauliesworld}
 \linkedin{linkedin.com/in/pjcolorado}
 \photo[3cm][0pt]{portrait.png}
-\quote{Interests include storage systems, virtualized computing, \hspace{0.25in}performance analysis, systems integration, automation design, \hspace{0.25in}and the occasional mountain climb.}
+\quote{Interests include storage systems, virtualized computing, \hspace{0.25in}performance analysis, automation design, and the \hspace{0.6in}occasional mountain climb.}
 
 % uncomment to suppress automatic page numbering for CVs longer than one page
 \nopagenumbers{}

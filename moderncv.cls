@@ -236,13 +236,13 @@
 % where the <city> and <country> arguments can be omitted or provided empty
 \NewDocumentCommand{\address}{mG{}G{}}{\def\@addressstreet{#1}\def\@addresscity{#2}\def\@addresscountry{#3}}
 
-% defines one's email (optional)
-% usage: \email{<email adress>}
-\newcommand*{\email}[1]{\def\@email{#1}}
-
 % defines one's home page (optional)
 % usage: \homepage{<url>}
 \newcommand*{\homepage}[1]{\def\@homepage{#1}}
+
+% defines one's email (optional)
+% usage: \email{<email adress>}
+\newcommand*{\email}[1]{\def\@email{#1}}
 
 % defines one's github page (optional)
 % usage: \github{<url>}
