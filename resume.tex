@@ -4,12 +4,12 @@
 %% start of file `template.tex'.
 %% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
 %% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
-%% Copyright 2015-2017 Paul Johnson (paulie@pauliesworld.org).
+%% Copyright 2015-2019 Paul Johnson (paulie@pauliesworld.org).
 %%
 %% Based on Oliver Schrenk's version of modercv:
 %% https://github.com/oschrenk/moderncv-template/
 %%
-%% Copyright 2015-2017 Paul Johnson (paulie@pauliesworld.org).
+%% Copyright 2015-2019 Paul Johnson (paulie@pauliesworld.org).
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License version 1.3c,
@@ -119,7 +119,7 @@
 % personal date
 \firstname{Paul}
 \familyname{Johnson}
-\title {Systems Engineer}
+\title {Software Engineer}
 \address{XXX XXXXXX Dr.}{Broomfield, CO 80020}
 \phone{+1.XXX.XXX.XXXX}
 \homepage{www.pauliesworld.org}
@@ -127,7 +127,7 @@
 \github{github.com/pauliesworld}
 \linkedin{linkedin.com/in/pjcolorado}
 \photo[3cm][0pt]{portrait.png}
-\quote{Interests include storage systems, virtualized computing, \hspace{0.25in}performance analysis, automation design, and the \hspace{0.6in}occasional mountain climb.}
+\quote{Interests include storage systems, serverless frameworks, \hspace{0.25in}performance analysis, scale-out design, and the \hspace{0.8in}occasional mountain climb.}
 
 % uncomment to suppress automatic page numbering for CVs longer than one page
 \nopagenumbers{}
@@ -161,9 +161,9 @@
 
 %Section
 \section{Experience}
-\cventry{Apr \hspace{.505in} \hspace{.43in}\\2017 \arrowsymbol \hspace{.27in}}{Amazon Web Services}{}{}{}{Broomfield, CO}
+\cventry{Apr \hspace{.505in} \hspace{.43in}\\2017 \arrowsymbol \hspace{.27in}}{Amazon Web Services}{}{}{}{Denver, CO}
 \vspace*{-3mm}
-\cventry{}{}{Systems Engineer}{}{}{}
+\cventry{}{}{Systems Development Engineer}{}{}{}
 \vspace*{-1mm}
 \cvlistitem{}
 \vspace{0.17in}
@@ -183,9 +183,9 @@
 \vspace*{-1mm}
 \cvlistitem{Integral member of a team of system engineers tasked to map out bleeding edge and large-scale use cases advanced by customers of the Oracle ZFS Storage Appliance}
 \cvlistitem{Led sales proof-of-concepts across the United States in addition to Sweden, Mexico, and New Zealand, bringing in over \$8 million in revenue}
-\cvlistitem{Authored 3 whitepapers, support documentation, and created a web blog to assist the sales and service teams}
-\cvlistitem{Architected test plans and led multiple software releases for the quality assurance organization, covering features such as replication, deduplication, and ZFS Analytics}
-\cvlistitem{Built a deployment API for Oracle VM to serve hundreds of virtual machines for QA}
+\cvlistitem{Architected test plans and led multiple software releases for the quality assurance organization, covering features such as replication, deduplication, and analytics}
+\cvlistitem{Built a deployment API for Oracle VM to serve thousands of virtual machines for QA}
+\cvlistitem{Authored 3 whitepapers, support documentation, and created a blog to assist customers and the sales \& service teams}
 \cvlistitem{Presented at Oracle OpenWorld from 2012 \arrowsymbol 2016 on topics including ZFS Analytics, ZFS RESTful API, Oracle Database 12c (dNFS / HCC / RMAN), and MySQL}
 \vspace{0.15in}
 
@@ -193,9 +193,9 @@
 \vspace*{-3mm}
 \cventry{}{}{Senior Software Engineer}{}{}{}
 \vspace*{-1mm}
-\cvlistitem{Primary test lead for the initial integration of the Oracle ZFS Storage Appliance with the Oracle Exalogic Elastic Cloud and Oracle SuperCluster}
-\cvlistitem{Engaged in storage ecosystem testing encompassing Oracle Database 11g/12c, Oracle VM, and the Oracle Private Compute Appliance}
-\cvlistitem{Qualified the Xsigo I/O Fabric Director with the Oracle ZFS Storage Appliance}
+\cvlistitem{Primary quality lead for the initial systems integration of the Oracle ZFS Storage Appliance with the Oracle Exalogic Elastic Cloud and Oracle SuperCluster}
+\cvlistitem{Conducted storage ecosystem testing encompassing Oracle Database 11g/12c, Oracle VM, and the Oracle Private Compute Appliance}
+%%\cvlistitem{Qualified the Xsigo I/O Fabric Director with the Oracle ZFS Storage Appliance}
 \cvlistitem{Led training sessions for customers, sales consultants, quality assurance engineers, and partners in Florida, California, New York, Hungary, India, Japan, and Israel}
 \vspace{0.15in}
 
@@ -204,7 +204,7 @@
 \cventry{}{}{Software Engineer}{}{}{}
 \vspace*{-1mm}
 \cvlistitem{Provided development support for device drivers on Solaris 10 and OpenSolaris for more than 100 different independent hardware vendors (IHV)}
-\cvlistitem{Conducted interoperability testing of IHV products, completing over 60 projects}
+%%\cvlistitem{Conducted interoperability testing of IHV products, completing over 60 projects}
 \cvlistitem{Re-evaluated hardware testing strategies by rewriting 7 test plans covering USB, KVM, storage, printing, audio, graphics, and network connectivity}
 \cvlistitem{Administered a cluster of 18 SPARC and x86-based Sun servers used in the testing and certification of third party hardware products}
 \vspace{0.15in}
@@ -213,10 +213,10 @@
 \vspace*{-3mm}
 \cventry{}{}{Systems Administrator}{}{}{}
 \vspace*{-1mm}
-\cvlistitem{Maintained an environment of Solaris servers involving installs, upgrades, and patching}
+%%\cvlistitem{Maintained an environment of Solaris servers involving installs, upgrades, and patching}
 \cvlistitem{Constructed a Perl-based framework to automate satellite communication and gather weather telemetry data in Greenland and Antarctica}
 \cvlistitem{Built a custom Windows MSI package manager alongside Ghost imaging to automate new workstation installations}
-\cvlistitem{Deployed an OpenLDAP directory system to manage employee authentication}
+\cvlistitem{Deployed an OpenLDAP directory system to manage employee information and authentication}
 \vspace{0.15in}
 
 \cventry{May \hspace{0.215in} May\\2006  \arrowsymbol  2007}{University of Colorado}{}{}{}{Boulder, CO}
@@ -228,18 +228,22 @@
 %%\cvlistitem{Handled in excess of 3000 support cases during employment}
 %%\vspace{0.15in}
 
+%%Section{Patents}
+%%\cvitem{}{Patent pending}
+
 %Section
 \section{Certifications}
+%%\cvitem{}{AWS Certified Solutions Architect - Associate}
 \cvitem{}{Oracle Certified Professional - Oracle Solaris 10 System Administrator}
 \cvitem{}{Oracle Certified Expert - Oracle Solaris 10 Network Administrator}
 \cvitem{}{Oracle Certified Expert - Oracle Solaris 10 Security Administrator}
 
 %Section
 \section{Expertise} 
-\cvline{Systems}{FreeBSD, Linux, macOS, Solaris, Windows}
+\cvline{Systems}{AWS, FreeBSD, Linux, macOS, Solaris, Windows}
 \cvline{Languages}{Bash, C, C++, Perl, Python, SQL}
 \cvline{Protocols}{TCP/IP, NFS, iSCSI, Fibre Channel, InfiniBand}
-\cvline{Tools}{BIND, DTrace, Git, OpenLDAP, Oracle Database, Mercurial, MySQL, vi}
+\cvline{Tools}{BIND, DTrace, Git, Lambda, OpenLDAP, Oracle Database, MySQL, SNS, SQS, SWF}
 
 \makecvfooter
 \end{document}
